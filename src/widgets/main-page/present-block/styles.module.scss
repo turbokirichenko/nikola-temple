@@ -1,0 +1,65 @@
+.present-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #fff, #ffffff00 90%);
+  }
+
+  &__heading {
+    width: 60%;
+    min-height: 100px;
+    padding: 10% 5%;
+    z-index: 2;
+  }
+
+  &__background {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 800px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.church-heading {
+  width: 100%;
+  height: 100%;
+  &__name {
+    font-size: 48px;
+    line-height: 52px;
+    margin: 10px 0;
+  }
+  &__title-line {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1100px) {
+  .church-heading {
+    &__name {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__title-line {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
