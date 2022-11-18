@@ -9,7 +9,7 @@
 
   &__title {
     min-width: 360px;
-    max-width: 720px;
+    max-width: 50%;
   }
 
   &__redirects {
@@ -29,7 +29,7 @@
   width: 100%;
   height: 100%;
   &__item {
-    width: 300px;
+    width: 320px;
     height: 80px;
     margin: auto;
   }
@@ -39,4 +39,24 @@
   font-size: 28px;
   color: #585756;
   line-height: 80px;
+}
+
+@media (max-width: 1100px) {
+  .description {
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .redirect-block {
+    &__item {
+      width: 320px;
+      height: 60px;
+    }
+  }
+
+  .link-button-text {
+    font-size: 25px;
+    line-height: 40px;
+  }
 }
