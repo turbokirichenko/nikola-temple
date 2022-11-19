@@ -1,0 +1,52 @@
+.superior-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 5%;
+  background-color: #eef97840;
+
+  &__info {
+    max-width: 480px;
+  }
+
+  &__image {
+    width: 330px;
+  }
+}
+
+.information {
+  &__heading {
+    font-size: 28px;
+    font-weight: 400;
+    height: 100px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  &__content {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .superior-block {
+    &__info {
+      width: 100%;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}

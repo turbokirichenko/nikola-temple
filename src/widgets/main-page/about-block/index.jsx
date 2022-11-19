@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import Button from "@/shared/ui-kit/button";
+import OpenMoreButton from "@/features/open-more-button";
 
 export default function AboutBlock() {
   return (
@@ -23,13 +23,7 @@ export default function AboutBlock() {
         </span>
       </div>
       <div className={styles["about-block__link-button"]}>
-        <div className={styles["button-wrapper"]}>
-          <div className={styles["button-wrapper__content"]}>
-            <Button enableArrow>
-              <span className={styles["button-text"]}>подробнее</span>
-            </Button>
-          </div>
-        </div>
+        <OpenMoreButton />
       </div>
     </div>
   );

@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 30%;
     text-align: center;
     &-minimize {
       min-width: 100%;
@@ -46,6 +46,6 @@
 
 @media (max-width: 1100px) {
   .arrow-img {
-    max-width: 28px;
+    max-width: 36px;
   }
 }
