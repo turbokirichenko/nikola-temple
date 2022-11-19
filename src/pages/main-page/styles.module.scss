@@ -59,32 +59,28 @@
 
   &__sacred-item {
     width: 100%;
-    min-height: 1200px;
+    height: 1100px;
   }
 
   &__superior-item {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 
   &__gallery-item {
     width: 100%;
-    height: 1900px;
   }
 
   &__orders-item {
     width: 100%;
-    height: 400px;
   }
 
   &__map-item {
     width: 100%;
-    height: 500px;
   }
 
   &__contact-item {
     width: 100%;
-    height: 370px;
   }
 }
 
@@ -98,6 +94,10 @@
     &__present-item {
       width: 100%;
       height: 420px;
+    }
+
+    &__sacred-item {
+      height: auto;
     }
   }
 }

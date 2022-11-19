@@ -50,6 +50,11 @@
 }
 
 @media (max-width: 1100px) {
+  .about-block {
+    &__text {
+      column-count: 1;
+    }
+  }
   .button-wrapper {
     justify-content: center;
   }

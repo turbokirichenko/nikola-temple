@@ -1,0 +1,43 @@
+.contact-block {
+  background-color: #eef97840;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 5%;
+
+  &__column {
+    flex: 1 1 0px;
+  }
+}
+
+.contact-column {
+  max-width: 360px;
+  margin: auto;
+  &__heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 60px;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  max-width: 240px;
+  &__content {
+    text-align: left;
+  }
+  &__image {
+    display: block;
+    width: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-block {
+    flex-direction: column;
+  }
+}

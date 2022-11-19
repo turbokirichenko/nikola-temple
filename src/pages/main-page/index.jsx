@@ -4,6 +4,12 @@ import PresentBlock from "@/widgets/main-page/present-block";
 import AlertBlock from "@/widgets/main-page/alert-block";
 import ScheduleBlock from "@/widgets/main-page/schedule-block";
 import AboutBlock from "@/widgets/main-page/about-block";
+import SacredBlock from "@/widgets/main-page/sacred-block";
+import SuperiorBlock from "@/widgets/main-page/superior-block";
+import OrderBlock from "@/widgets/main-page/order-block";
+import GalleryBlock from "@/widgets/main-page/gallery-block";
+import ContactBlock from "@/widgets/main-page/contact-block";
+import MapBlock from "@/widgets/main-page/map-block";
 import Button from "@/shared/ui-kit/button";
 export default function MainPage() {
   return (
@@ -22,20 +28,22 @@ export default function MainPage() {
         <AboutBlock />
       </section>
       <section className={styles["main-page__sacred-item"]}>
-        sacred-item
+        <SacredBlock />
       </section>
       <section className={styles["main-page__superior-item"]}>
-        superior-item
+        <SuperiorBlock />
       </section>
       <section className={styles["main-page__gallery-item"]}>
-        gallery-item
+        <GalleryBlock />
       </section>
       <section className={styles["main-page__orders-item"]}>
-        orders-item
+        <OrderBlock />
       </section>
-      <section className={styles["main-page__map-item"]}>map-item</section>
+      <section className={styles["main-page__map-item"]}>
+        <MapBlock />
+      </section>
       <footer className={styles["main-page__contact-item"]}>
-        contact-item
+        <ContactBlock />
       </footer>
       <div className={styles["main-page__float-button"]}>
         <Button />
