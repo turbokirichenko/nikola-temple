@@ -1,0 +1,85 @@
+.treb-form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 30px;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  &__header,
+  &__footer {
+    width: 100%;
+  }
+  &__content {
+    height: 100%;
+  }
+  &__submit {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  border-radius: 3px;
+}
+
+.inputs {
+  width: 100%;
+  min-width: 240px;
+  max-width: 360px;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  &__item {
+    width: 100%;
+    height: 24px;
+  }
+}
+
+.treb-input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid red;
+  font-size: 18px;
+  line-height: 24px;
+  color: red;
+
+  &-rip {
+    color: #222;
+    border-bottom: 1px solid #222;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom-width: 2px;
+  }
+}
+
+.header-image,
+.footer-image {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.treb-button {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-width: 100px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #888;
+  margin: auto;
+
+  &__content {
+    font-size: 18px;
+    line-height: 60px;
+    color: #888;
+  }
+}
