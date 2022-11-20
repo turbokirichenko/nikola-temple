@@ -1,0 +1,34 @@
+.page-layout {
+  width: 100%;
+  min-height: 100vh;
+
+  &__heading {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+  }
+
+  &__float-button {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    transition: transform 0.5s;
+    transform: rotate(-90deg);
+
+    &:hover {
+      transform: rotate(270deg);
+    }
+  }
+}
+
+.float-button {
+  opacity: 1;
+  transition: opacity 0.5s;
+  &-disable {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

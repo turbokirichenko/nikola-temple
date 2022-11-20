@@ -19,6 +19,9 @@ export default function HeaderMenu({}) {
         <Item>благотворительность</Item>
         <Item>контакты</Item>
       </div>
+      <div className={styles["header-menu__open-menu"]}>
+        <Item>меню</Item>
+      </div>
     </div>
   );
 }

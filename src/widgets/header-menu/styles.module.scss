@@ -1,19 +1,22 @@
 .header-menu {
   width: 100%;
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 120px;
+  padding: 0 5%;
 
-  height: 80px;
+  height: 100%;
   background: #f9f9f9;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
 
   &__logo {
-    min-width: 220px;
     padding: 10px;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 
   &__ring {
@@ -21,9 +24,30 @@
     min-width: 480px;
     justify-content: space-between;
   }
+
+  &__open-menu {
+    display: none;
+  }
 }
 
 .logo {
   width: 100%;
   display: block;
+}
+
+@media (max-width: 1100px) {
+  .header-menu {
+    &__logo {
+      width: 160px;
+      position: relative;
+      right: 40px;
+      top: 0;
+    }
+    &__ring {
+      display: none;
+    }
+    &__open-menu {
+      display: block;
+    }
+  }
 }

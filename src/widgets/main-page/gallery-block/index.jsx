@@ -39,6 +39,7 @@ export default function GalleryBlock() {
               className={`${styles["gallery__item"]} ${
                 styles["gallery__item-" + index]
               }`}
+              key={index}
               src={src}
               alt="photo"
             />
