@@ -5,6 +5,7 @@ import HistoryPage from "@/pages/history-page";
 import SacredPage from "@/pages/sacred-page";
 import SuperiorPage from "@/pages/superior-page";
 import ContactsPage from "@/pages/contacts-page";
+import TrebsPage from "@/pages/trebs-page";
 
 export default function AppRouter() {
   return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
           <Route path="/superior" element={<SuperiorPage />} />
           <Route path="/orders" element={<div>Orders Page</div>} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/trebs" element={<TrebsPage />} />
           <Route path="*" element={<div>404 not found</div>} />
         </Route>
       </Routes>

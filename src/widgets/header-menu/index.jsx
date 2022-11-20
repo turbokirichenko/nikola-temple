@@ -10,7 +10,7 @@ export default function HeaderMenu({}) {
       <div className={styles["header-menu__ring"]}>
         <Item href="history">история</Item>
         <Item href="sacred">чудотворная икона</Item>
-        <Item href="contacts">заказать требы</Item>
+        <Item href="trebs">заказать требы</Item>
       </div>
       <div className={styles["header-menu__logo"]}>
         <Link to="/">
