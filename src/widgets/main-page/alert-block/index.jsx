@@ -17,13 +17,13 @@ export default function AlertBlock() {
       <div className={styles["alert-block__redirects"]}>
         <div className={styles["redirect-block"]}>
           <div className={styles["redirect-block__item"]}>
-            <Link to="#">
+            <a target="_blank" href="https://vk.com/st.nicholaschurchonvspolye">
               <Button>
                 <span className={styles["link-button-text"]}>
                   группа вконтакте
                 </span>
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

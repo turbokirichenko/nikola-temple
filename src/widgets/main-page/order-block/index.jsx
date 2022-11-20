@@ -1,17 +1,20 @@
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 import Button from "@/shared/ui-kit/button";
 import trebsImg from "@/shared/assets/trebs.svg";
 import donationImg from "@/shared/assets/donation.svg";
 
-function ButtonLink({ title = "" }) {
+function ButtonLink({ title = "", to = "" }) {
   return (
-    <div className={styles["button-wrapper"]}>
-      <div className={styles["button-wrapper__content"]}>
-        <Button>
-          <span className={styles["button-text"]}>{title}</span>
-        </Button>
+    <Link to={to}>
+      <div className={styles["button-wrapper"]}>
+        <div className={styles["button-wrapper__content"]}>
+          <Button>
+            <span className={styles["button-text"]}>{title}</span>
+          </Button>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -25,7 +28,7 @@ export default function OrderBlock() {
             src={trebsImg}
             alt="trebs"
           />
-          <ButtonLink title={"заказать требы"} />
+          <ButtonLink title={"заказать требы"} to="/trebs" />
         </div>
       </div>
       <div className={styles["order-block__item"]}>
@@ -35,7 +38,7 @@ export default function OrderBlock() {
             src={donationImg}
             alt="donation"
           />
-          <ButtonLink title={"пожертвования"} />
+          <ButtonLink title={"пожертвования"} to="/contacts" />
         </div>
       </div>
     </div>
