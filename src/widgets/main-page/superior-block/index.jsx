@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import Button from "@/shared/ui-kit/button";
 import superiorImg from "@/shared/assets/superior.png";
+import { Link } from "react-router-dom";
 
 export default function SuperiorBlock() {
   return (
@@ -17,7 +18,9 @@ export default function SuperiorBlock() {
           <div className={styles["information__button"]}>
             <div className={styles["button-wrapper"]}>
               <div className={styles["button-wrapper__content"]}>
-                <Button enableArrow />
+                <Link to="/superior">
+                  <Button enableArrow />
+                </Link>
               </div>
             </div>
           </div>

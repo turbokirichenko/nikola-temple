@@ -13,14 +13,16 @@ function ContactColumn({ children, title = "" }) {
   );
 }
 
-function Contact({ children, icon = "" }) {
+function Contact({ children, icon = "", href = "" }) {
   return (
-    <div className={styles["contact"]}>
-      <div className={styles["contact__content"]}>{children}</div>
-      {icon && (
-        <img className={styles["contact__image"]} src={icon} alt="contact" />
-      )}
-    </div>
+    <a target="_blank" href={href}>
+      <div className={styles["contact"]}>
+        <div className={styles["contact__content"]}>{children}</div>
+        {icon && (
+          <img className={styles["contact__image"]} src={icon} alt="contact" />
+        )}
+      </div>
+    </a>
   );
 }
 
@@ -35,7 +37,7 @@ export default function ContactBlock() {
               <p>ул. Гоголя 13а</p>
             </span>
           </Contact>
-          <Contact icon={phoneIcon}>
+          <Contact icon={phoneIcon} href="tel:+79807052588">
             <span>+7 (980) 705 25 88</span>
           </Contact>
         </ContactColumn>
@@ -52,10 +54,14 @@ export default function ContactBlock() {
       </div>
       <div className={styles["contact-block__column"]}>
         <ContactColumn title="СОЦ СЕТИ">
-          <Contact icon={youtubeIcon}>
+          <Contact
+            icon={youtubeIcon}
+            href="https://www.youtube.com/channel/UC4R0nYfYdUnnXpvDw9b6ScQ">
             <span>Youtube</span>
           </Contact>
-          <Contact icon={vkIcon}>
+          <Contact
+            icon={vkIcon}
+            href="https://vk.com/st.nicholaschurchonvspolye">
             <span>Вконтакте</span>
           </Contact>
           <Contact>

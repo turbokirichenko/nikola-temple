@@ -45,7 +45,7 @@ export default function SacredBlock() {
         />
       </div>
       <div className={styles["sacred-block__more-button"]}>
-        <OpenMoreButton />
+        <OpenMoreButton to="/sacred" />
       </div>
     </div>
   );
