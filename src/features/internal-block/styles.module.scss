@@ -1,0 +1,34 @@
+.internal-block {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 40px;
+  &__content {
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 36px;
+    max-width: 900px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__images-column {
+    flex-grow: 1;
+    min-width: 240px;
+  }
+}
+
+.images {
+  max-width: 360px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin: auto;
+}

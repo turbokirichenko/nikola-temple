@@ -1,9 +1,27 @@
 .item {
-  width: 100%;
+  display: inline-block;
   height: 100%;
   text-align: center;
   &__content {
+    display: block;
     text-decoration: none;
+    position: relative;
     color: #000;
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-bottom: 1px solid #000;
+      transition: width 0.5s;
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeaderMenu from "../../widgets/header-menu";
 import styles from "./styles.module.scss";
 import PresentBlock from "@/widgets/main-page/present-block";
@@ -14,7 +15,6 @@ import Button from "@/shared/ui-kit/button";
 export default function MainPage() {
   return (
     <main className={styles["main-page"]}>
-      <header className={styles["main-page__header"]}></header>
       <section className={styles["main-page__present-item"]}>
         <PresentBlock />
       </section>
@@ -45,9 +45,6 @@ export default function MainPage() {
       <footer className={styles["main-page__contact-item"]}>
         <ContactBlock />
       </footer>
-      <div className={styles["main-page__float-button"]}>
-        <Button />
-      </div>
     </main>
   );
 }

@@ -30,12 +30,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body > #root {
   margin: 0;
   width: 100%;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body * {

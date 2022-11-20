@@ -1,0 +1,9 @@
+.sub-topic {
+  width: 100%;
+  min-height: 40px;
+  &__title {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+}
