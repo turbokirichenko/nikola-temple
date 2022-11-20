@@ -1,4 +1,5 @@
 import Item from "./ui/item";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 import logo from "@/shared/assets/logo1.png";
@@ -7,21 +8,21 @@ export default function HeaderMenu({}) {
   return (
     <div className={styles["header-menu"]}>
       <div className={styles["header-menu__ring"]}>
-        <Item>о храме</Item>
-        <Item>чудотворная икона</Item>
-        <Item>заказать требы</Item>
+        <Item href="history">история</Item>
+        <Item href="sacred">чудотворная икона</Item>
+        <Item href="contacts">заказать требы</Item>
       </div>
       <div className={styles["header-menu__logo"]}>
-        <img className={styles["logo"]} src={logo} alt="log" />
+        <Link to="/">
+          <img className={styles["logo"]} src={logo} alt="log" />
+        </Link>
       </div>
       <div className={styles["header-menu__ring"]}>
-        <Item>галерея</Item>
-        <Item>благотворительность</Item>
-        <Item>контакты</Item>
+        <Item href="/#gallery">галерея</Item>
+        <Item href="contacts">благотворительность</Item>
+        <Item href="/#contact">контакты</Item>
       </div>
-      <div className={styles["header-menu__open-menu"]}>
-        <Item>меню</Item>
-      </div>
+      <div className={styles["header-menu__open-menu"]}>меню</div>
     </div>
   );
 }

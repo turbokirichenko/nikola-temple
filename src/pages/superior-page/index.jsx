@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import { useEffect } from "react";
 import Heading from "@/features/heading";
 import TopicBlock from "@/widgets/page-content/topic-block";
 import InternalBlock from "@/features/internal-block";
@@ -10,6 +11,9 @@ import Superior2Img from "@/shared/assets/superiors/superior2.png";
 import Superior3Img from "@/shared/assets/superiors/superior3.png";
 
 export default function SuperiorPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles["superior-page"]}>
       <section className={styles["superior-page__heading"]}>

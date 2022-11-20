@@ -1,0 +1,19 @@
+.float-button {
+  opacity: 1;
+  transition: opacity 0.5s;
+  border: none !important;
+  &:hover {
+    border: none !important;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+  &:active {
+    outline: none !important;
+  }
+  &-disable {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

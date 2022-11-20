@@ -9,14 +9,12 @@ export default function MapBlock() {
         <YMaps>
           <Map
             defaultState={{
-              center: [55.75, 37.57],
-              zoom: 9,
-              controls: ["zoomControl", "fullscreenControl"],
+              center: [57.193255, 39.419683],
+              zoom: 16,
             }}
             width="100%"
-            height="100%"
-            modules={["control.ZoomControl", "control.FullscreenControl"]}>
-            <Placemark defaultGeometry={[55.75, 37.57]} />
+            height="100%">
+            <Placemark defaultGeometry={[57.193255, 39.419683]} />
           </Map>
         </YMaps>
       </div>
