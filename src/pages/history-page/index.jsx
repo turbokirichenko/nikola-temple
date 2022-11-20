@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import { useEffect } from "react";
 import Heading from "@/features/heading";
 import SubTopic from "@/features/sub-topic";
 import TopicBlock from "@/widgets/page-content/topic-block";
@@ -15,6 +16,9 @@ import R3Img from "@/shared/assets/history/R3.png";
 import Open1Img from "@/shared/assets/painting/Open1.png";
 
 export default function HistoryPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles["history-page"]}>
       <section className={styles["history-page__heading"]}>

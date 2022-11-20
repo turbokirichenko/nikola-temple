@@ -1,9 +1,9 @@
 import styles from "./styles.module.scss";
+import { useEffect } from "react";
 import Heading from "@/features/heading";
 import SubTopic from "@/features/sub-topic";
 import TopicBlock from "@/widgets/page-content/topic-block";
 import InternalBlock from "@/features/internal-block";
-import InternalImage from "@/features/internal-image";
 
 //img
 import IconImg from "@/shared/assets/icon.png";
@@ -11,6 +11,9 @@ import AllImg from "@/shared/assets/painting/all.png";
 import MirrorImg from "@/shared/assets/painting/mirror.png";
 
 export default function SacredPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles["sacred-page"]}>
       <section className={styles["sacred-page__heading"]}>
