@@ -31,7 +31,9 @@ export default function ContactBlock() {
     <div className={styles["contact-block"]}>
       <div className={styles["contact-block__column"]}>
         <ContactColumn title="КОНТАКТЫ">
-          <Contact icon={mapIcon}>
+          <Contact
+            icon={mapIcon}
+            href="https://yandex.ru/maps/10838/rostov/?from=api-maps&ll=39.419683%2C57.193255&mode=routes&origin=jsapi_2_1_79&rtext=~57.193255%2C39.419683&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNTEyMjExOTM1EmDQoNC%2B0YHRgdC40Y8sINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCg0L7RgdGC0L7Qsiwg0YPQu9C40YbQsCDQk9C%2B0LPQvtC70Y8sIDEz0JAiCg3CrR1CFeXFZEI%3D&z=16">
             <span>
               <p>Ростов Великий</p>
               <p>ул. Гоголя 13а</p>
@@ -44,7 +46,7 @@ export default function ContactBlock() {
       </div>
       <div className={styles["contact-block__column"]}>
         <ContactColumn title="ЧАСЫ РАБОТЫ">
-          <Contact>
+          <Contact href="#">
             <span>
               <p>ежедневно</p>
               <p>с 9:00 до 13:00</p>

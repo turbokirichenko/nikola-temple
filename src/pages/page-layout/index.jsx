@@ -13,9 +13,6 @@ export default function PageLayout({}) {
         <HeaderMenu />
       </div>
       <Outlet />
-      <footer className={styles["page-layout__about-author"]}>
-        <AuthorBlock />
-      </footer>
       <div className={styles["page-layout__float-button"]}>
         <GoTopButton displayAfter={200} target={topRef} />
       </div>

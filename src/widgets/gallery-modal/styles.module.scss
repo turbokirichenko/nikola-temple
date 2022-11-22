@@ -1,0 +1,94 @@
+.modal-place {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.gallery-layout {
+  width: 100%;
+  height: 100%;
+  background-color: #00000020;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  &__content {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+  }
+}
+
+.gallery-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  &__image {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%, -50%));
+    opacity: 0;
+    animation-name: arrive-image;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  &__button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    padding: 10px 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:active {
+      border: none !important;
+      opacity: 1;
+    }
+
+    &:focus {
+      border: none !important;
+      outline: none !important;
+    }
+
+    &-next {
+      right: 5%;
+      transform: rotate(180deg);
+      text-align: left;
+    }
+
+    &-prev {
+      left: 5%;
+      text-align: left;
+    }
+  }
+}
+
+.button-image {
+  width: 28px;
+}
+
+@keyframes arrive-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

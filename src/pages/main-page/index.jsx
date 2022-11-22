@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderMenu from "../../widgets/header-menu";
 import styles from "./styles.module.scss";
@@ -13,6 +13,8 @@ import GalleryBlock from "@/widgets/main-page/gallery-block";
 import ContactBlock from "@/widgets/main-page/contact-block";
 import MapBlock from "@/widgets/main-page/map-block";
 import Button from "@/shared/ui-kit/button";
+import AuthorBlock from "@/widgets/author-block";
+import GalleryModal from "@/widgets/gallery-modal";
 
 export default function MainPage() {
   const mainRef = useRef(null);
@@ -42,6 +44,8 @@ export default function MainPage() {
     }
   }, [routePath]);
 
+  const [modalGallery, setModalGallery] = useState(false);
+
   return (
     <main ref={mainRef} className={styles["main-page"]}>
       <section className={styles["main-page__present-item"]}>
@@ -63,7 +67,7 @@ export default function MainPage() {
         <SuperiorBlock />
       </section>
       <section ref={galleryRef} className={styles["main-page__gallery-item"]}>
-        <GalleryBlock />
+        <GalleryBlock setModalGallery={setModalGallery} />
       </section>
       <section className={styles["main-page__orders-item"]}>
         <OrderBlock />
@@ -74,6 +78,13 @@ export default function MainPage() {
       <footer ref={contactRef} className={styles["main-page__contact-item"]}>
         <ContactBlock />
       </footer>
+      <footer className={styles["main-page__about-author"]}>
+        <AuthorBlock />
+      </footer>
+      <GalleryModal
+        modalGallery={modalGallery}
+        setModalGallery={setModalGallery}
+      />
     </main>
   );
 }

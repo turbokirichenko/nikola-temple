@@ -23,7 +23,7 @@ export default function AboutBlock() {
         </span>
       </div>
       <div className={styles["about-block__link-button"]}>
-        <OpenMoreButton />
+        <OpenMoreButton to="/history" />
       </div>
     </div>
   );

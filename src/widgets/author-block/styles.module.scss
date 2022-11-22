@@ -9,8 +9,8 @@
   position: relative;
   top: 0;
   left: 0;
-  background-color: #1abc9c;
-  animation: bg-color 10s infinite;
+  background-color: #c5ca2b;
+  animation: bg-color 20s infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +22,8 @@
 
 .author-text {
   font-family: FedokaOne, monospace;
-  font-size: 18px;
-  color: white;
+  font-size: 14px;
+  color: #fff;
 
   &__link {
     color: rgb(255, 255, 255);
@@ -37,21 +37,15 @@
 
 @keyframes bg-color {
   0% {
-    background-color: #e74c3c;
+    background-color: #c5ca2b;
   }
-  20% {
+  25% {
     background-color: #f1c40f;
   }
-  40% {
-    background-color: #1abc9c;
-  }
-  60% {
-    background-color: #3498db;
-  }
-  80% {
-    background-color: #9b59b6;
+  75% {
+    background-color: #c5ca2b;
   }
   100% {
-    background-color: #e74c3c;
+    background-color: #c5ca2b;
   }
 }
