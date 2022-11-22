@@ -1,0 +1,57 @@
+@font-face {
+  font-family: FedokaOne;
+  src: url("../../shared/fonts/Fredoka_One/FredokaOne-Regular.ttf");
+}
+
+.author-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #1abc9c;
+  animation: bg-color 10s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    text-align: center;
+  }
+}
+
+.author-text {
+  font-family: FedokaOne, monospace;
+  font-size: 18px;
+  color: white;
+
+  &__link {
+    color: rgb(255, 255, 255);
+    filter: invert(0);
+    transition: color 0.5s;
+    &:hover {
+      color: rgb(22, 22, 22);
+    }
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: #e74c3c;
+  }
+  20% {
+    background-color: #f1c40f;
+  }
+  40% {
+    background-color: #1abc9c;
+  }
+  60% {
+    background-color: #3498db;
+  }
+  80% {
+    background-color: #9b59b6;
+  }
+  100% {
+    background-color: #e74c3c;
+  }
+}
