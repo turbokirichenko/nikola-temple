@@ -7,7 +7,10 @@ export default function AuthorBlock({}) {
       <div className={styles["author-block__content"]}>
         <span className={styles["author-text"]}>
           created by{" "}
-          <a className={styles["author-text__link"]} href={AUTHOR_LINK}>
+          <a
+            target="_blank"
+            className={styles["author-text__link"]}
+            href={AUTHOR_LINK}>
             @turbokirichenko
           </a>
         </span>
