@@ -1,13 +1,18 @@
 import styles from "./styles.module.scss";
+import presentImgBlurMin from "@/shared/assets/present-img-blur-min.png";
 import presentImg from "@/shared/assets/present-img.png";
+import LazyImage from "../../../features/lazy-image";
+
 export default function PresentBlock() {
   return (
     <div className={styles["present-block"]}>
-      <img
-        className={styles["present-block__background"]}
-        src={presentImg}
-        alt="church"
-      />
+      <div className={styles["present-block__background"]}>
+        <LazyImage
+          src={presentImgBlurMin}
+          loadSrc={presentImg}
+          alt="church image"
+        />
+      </div>
       <div className={styles["present-block__heading"]}>
         <div className={styles["church-heading"]}>
           <h1 className={styles["church-heading__name"]}>

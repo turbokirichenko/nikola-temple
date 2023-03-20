@@ -10,7 +10,7 @@ export default function AuthorBlock({}) {
       <div className={styles["author-block"]}>
         <div className={styles["author-block__content"]}>
           <span className={styles["author-text"]}>
-            created by @turbokirichenko
+            / created by @turbokirichenko
           </span>
         </div>
       </div>

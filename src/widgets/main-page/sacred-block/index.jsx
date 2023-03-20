@@ -1,6 +1,9 @@
 import OpenMoreButton from "@/features/open-more-button";
 import styles from "./styles.module.scss";
-import iconImg from "@/shared/assets/icon.png";
+import IconImg from "@/shared/assets/icon.png";
+import IconImgBlurMin from "@/shared/assets/icon-blur-min.png";
+import LazyImage from "@/features/lazy-image";
+
 export default function SacredBlock() {
   return (
     <div className={styles["sacred-block"]}>
@@ -38,11 +41,9 @@ export default function SacredBlock() {
         </span>
       </div>
       <div className={styles["sacred-block__icon"]}>
-        <img
-          className={styles["sacred-icon"]}
-          src={iconImg}
-          alt="sacred icon"
-        />
+        <div className={styles["sacred-icon"]}>
+          <LazyImage src={IconImgBlurMin} loadSrc={IconImg} alt="sacred icon" />
+        </div>
       </div>
       <div className={styles["sacred-block__more-button"]}>
         <OpenMoreButton to="/sacred" />

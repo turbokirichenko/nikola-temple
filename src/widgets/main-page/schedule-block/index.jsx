@@ -1,5 +1,7 @@
 import styles from "./styles.module.scss";
 import frescoImg from "@/shared/assets/fresco.png";
+import frescoImgBlurMin from "@/shared/assets/fresco-blur-min.png";
+import LazyImage from "@/features/lazy-image";
 
 function BlurBlock({ children }) {
   return (
@@ -12,11 +14,9 @@ function BlurBlock({ children }) {
 export default function ScheduleBlock() {
   return (
     <div className={styles["schedule-block"]}>
-      <img
-        className={styles["schedule-block__background"]}
-        src={frescoImg}
-        alt="fresco"
-      />
+      <div className={styles["schedule-block__background"]}>
+        <LazyImage src={frescoImgBlurMin} loadSrc={frescoImg} alt="fresco" />
+      </div>
       <div className={styles["schedule-block__title"]}>
         <h1 className={styles["heading-title"]}>РАСПИСАНИЕ</h1>
       </div>

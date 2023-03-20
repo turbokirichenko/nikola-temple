@@ -21,11 +21,11 @@
 }
 
 .author-text {
-  font-family: FedokaOne, monospace;
-  font-size: 14px;
-  color: #fff;
+  font-size: 18px;
+  color: #222;
 
   &__link {
+    font-family: "Courier New", monospace;
     color: rgb(255, 255, 255);
     filter: invert(0);
     transition: color 0.5s;
@@ -37,15 +37,15 @@
 
 @keyframes bg-color {
   0% {
-    background-color: #c5ca2b;
+    background-color: #c5ca2b80;
   }
   25% {
-    background-color: #f1c40f;
+    background-color: #f1c40f80;
   }
   75% {
-    background-color: #c5ca2b;
+    background-color: #c5ca2b80;
   }
   100% {
-    background-color: #c5ca2b;
+    background-color: #c5ca2b80;
   }
 }
