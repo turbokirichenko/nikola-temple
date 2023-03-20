@@ -73,7 +73,30 @@ export default function ContactBlock() {
           </ContactColumn>
         </div>
       </div>
-      <div className={styles["contact-block-credentials"]}></div>
+      <ul className={styles["contact-block-credentials"]}>
+        <li className={styles["contact-block-credentials__title"]}>
+          Местная Религиозная Организация православный Приход Никольского храма
+          города Ростова Ярославской Епархии Русской Православной Церкви
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>ОГРН:</p> 1 027 600 006 191
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>ИНН:</p> 7 609 006 121
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>КПП:</p> 760 901 001
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>К/Р</p> 70 601 810 977 032 102 030
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>Р/С</p> 40 703 810 619 020 000 147
+        </li>
+        <li className={styles["contact-block-credentials__item"]}>
+          <p>Банк:</p> СЕВЕРГАЗБАНК (СГБ)
+        </li>
+      </ul>
     </div>
   );
 }
